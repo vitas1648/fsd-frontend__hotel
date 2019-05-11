@@ -18,6 +18,22 @@ module.exports = {
                 fallback: 'style-loader',
                 use: ['css-loader', 'sass-loader']
             })
+        }, {
+            test: /\.(eot|ttf|woff|woff2)$/,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    name: 'fonts/[name].[ext]'
+                }
+            },
+        }, {
+            test: /\.(png|svg|jpg|jpeg|gif)$/,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    name: 'img/[name].[ext]'
+                }
+            },
         }]
     },
     plugins: [
