@@ -1,7 +1,10 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('Montserrat-Regular.eot');
-    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('Montserrat-Regular.woff2') format('woff2'), url('Montserrat-Regular.woff') format('woff'), url('Montserrat-Regular.ttf') format('truetype'), url('Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('Montserrat-Regular.woff2') format('woff2');
+    src: url('Montserrat-Regular.woff') format('woff');
+    src: url('Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +12,10 @@
 @font-face {
     font-family: 'Quicksand';
     src: url('Quicksand-Regular.eot');
-    src: url('Quicksand-Regular.eot?#iefix') format('embedded-opentype'), url('Quicksand-Regular.woff2') format('woff2'), url('Quicksand-Regular.woff') format('woff'), url('Quicksand-Regular.ttf') format('truetype'), url('Quicksand-Regular.svg#Quicksand-Regular') format('svg');
+    src: url('Quicksand-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('Quicksand-Regular.woff2') format('woff2');
+    src: url('Quicksand-Regular.woff') format('woff');
+    src: url('Quicksand-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
