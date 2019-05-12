@@ -1,0 +1,76 @@
+$black: #1F2041;
+$purple: #BC9CFF;
+$green: #6FCF97;
+%dark-100 {
+    opacity: 1;
+}
+
+%dark-75 {
+    opacity: 0.75;
+}
+
+%dark-50 {
+    opacity: 0.5;
+}
+
+%dark-25 {
+    opacity: 0.25;
+}
+
+%dark-5 {
+    opacity: 0.05;
+}
+
+%regular-font {
+    font-style: normal;
+}
+
+%bold-font {
+    font-weight: bold;
+}
+
+%normal-font {
+    font-weight: normal;
+}
+
+%Quicksand {
+    font-family: Quicksand;
+}
+
+%Montserrat {
+    font-family: Montserrat;
+}
+
+%h1 {
+    @extend %Quicksand;
+    @extend %bold-font;
+    font-size: 24px;
+    line-height: 30px;
+    color: $black;
+}
+
+%h2 {
+    @extend %Quicksand;
+    @extend %bold-font;
+    font-size: 19px;
+    line-height: 24px;
+    color: $black;
+}
+
+%h3 {
+    @extend %Montserrat;
+    @extend %bold-font;
+    font-size: 12px;
+    line-height: 15px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+%text {
+    @extend %Montserrat;
+    @extend %normal-font;
+    font-size: 14px;
+    line-height: 24px;
+    color: $black;
+    @extend %dark-75;
+}
