@@ -21,56 +21,70 @@ $green: #6FCF97;
     opacity: 0.05;
 }
 
-%regular-font {
-    font-style: normal;
+.fill_black {
+    background-color: $black;
 }
 
-%bold-font {
-    font-weight: bold;
+.fill_purple {
+    background-color: $purple;
 }
 
-%normal-font {
-    font-weight: normal;
+.fill_green {
+    background-color: $green;
 }
 
-%Quicksand {
+%text_black {
+    color: $black;
+}
+
+.fill_dark-100 {
+    @extend %dark-100;
+}
+
+.fill_dark-75 {
+    @extend %dark-75;
+}
+
+.fill_dark-50 {
+    @extend %dark-50;
+}
+
+.fill_dark-25 {
+    @extend %dark-25;
+}
+
+.fill_dark-5 {
+    @extend %dark-5;
+}
+
+%text_Quicksand {
     font-family: Quicksand;
 }
 
-%Montserrat {
+%text_Montserrat {
     font-family: Montserrat;
 }
 
-%h1 {
-    @extend %Quicksand;
-    @extend %bold-font;
+%text_bold {
+    font-weight: bold;
+}
+
+%text_h1 {
     font-size: 24px;
     line-height: 30px;
-    color: $black;
 }
 
-%h2 {
-    @extend %Quicksand;
-    @extend %bold-font;
+%text_h2 {
     font-size: 19px;
     line-height: 24px;
-    color: $black;
 }
 
-%h3 {
-    @extend %Montserrat;
-    @extend %bold-font;
+%text_h3 {
     font-size: 12px;
     line-height: 15px;
-    color: $black;
-    text-transform: uppercase;
 }
 
-%text {
-    @extend %Montserrat;
-    @extend %normal-font;
+%text_body {
     font-size: 14px;
     line-height: 24px;
-    color: $black;
-    @extend %dark-75;
 }
