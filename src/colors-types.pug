@@ -1,0 +1,63 @@
+include color-item/color-item
+include type-item/type-item
+
+doctype html
+html(lang="ru")
+  head
+  body
+    .header-mini
+    .main
+      ul.colors
+        +color-item({
+          'color': 'fill_black fill_dark-100',
+          'name': 'Dark Shade 100%',
+          'color-name': '#1F2041'
+        }).colors__item
+        +color-item({
+          'color': 'fill_black fill_dark-75',
+          'name': 'Dark Shade 75%',
+          'color-name': '#1F2041'
+        }).colors__item
+        +color-item({
+          'color': 'fill_black fill_dark-50',
+          'name': 'Dark Shade 50%',
+          'color-name': '#1F2041'
+        }).colors__item
+        +color-item({
+          'color': 'fill_black fill_dark-25',
+          'name': 'Dark Shade 25%',
+          'color-name': '#1F2041'
+        }).colors__item
+        +color-item({
+          'color': 'fill_black fill_dark-5',
+          'name': 'Dark Shade 5%',
+          'color-name': '#1F2041'
+        }).colors__item
+        +color-item({
+          'color': 'fill_purple fill_dark-100',
+          'name': 'Purple',
+          'color-name': '#BC9CFF'
+        }).colors__item
+        +color-item({
+          'color': 'fill_green fill_dark-100',
+          'name': 'Green',
+          'color-name': '#6FCF97'
+        }).colors__item
+
+      ul.types
+        +type-item({
+          'type': 'h1',
+          'description': 'This one is the sub-section or widget title'
+        }).types__item
+        +type-item({
+          'type': 'h2',
+          'description': 'Next one is the item title inside widgets'
+        }).types__item
+        +type-item({
+          'type': 'h3',
+          'description': 'This is a label or CTA text'
+        }).types__item
+        +type-item({
+          'type': 'body',
+          'description': 'This is the body text which is used for most  of the design, like paragraphs, lists, etc.'
+        }).types__item

@@ -1,0 +1,40 @@
+// @import 'variables.scss';
+body {
+    width: 1380px;
+    padding: 30px;
+    margin: 0;
+}
+
+.main {
+    margin: 67px 161px 115px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.colors__item {
+    display: flex;
+}
+
+.colors__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+
+.types {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    // width: 37%;
+    width: 403px;
+}
+
+.types__item:not(:last-child) {
+    margin-bottom: 49px;
+}

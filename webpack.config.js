@@ -41,6 +41,10 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'colors-types.html',
+            template: './src/colors-types.pug'
+        }),
         new ExtractTextPlugin('style.css')
     ]
 };

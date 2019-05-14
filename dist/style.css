@@ -1,19 +1,196 @@
+body {
+  width: 1380px;
+  padding: 30px;
+  margin: 0; }
+body {
+  width: 1380px;
+  padding: 30px;
+  margin: 0; }
+
+.main {
+  margin: 67px 161px 115px 120px;
+  display: flex;
+  justify-content: space-between; }
+
+.colors {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.colors__item {
+  display: flex; }
+
+.colors__item:not(:last-child) {
+  margin-bottom: 20px; }
+
+.types {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 403px; }
+
+.types__item:not(:last-child) {
+  margin-bottom: 49px; }
 @font-face {
   font-family: 'Montserrat';
-  src: url(fonts/Montserrat-Regular.eot);
-  src: url(fonts/Montserrat-Regular.eot?#iefix) format("embedded-opentype");
-  src: url(fonts/Montserrat-Regular.woff2) format("woff2");
-  src: url(fonts/Montserrat-Regular.woff) format("woff");
-  src: url(fonts/Montserrat-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url(fonts/Montserrat-Regular.woff2) format("woff2"), url(fonts/Montserrat-Regular.woff) format("woff"), url(fonts/Montserrat-Regular.ttf) format("truetype"), url(fonts/Montserrat-Regular.eot); }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url(fonts/Quicksand-Regular.eot);
-  src: url(fonts/Quicksand-Regular.eot?#iefix) format("embedded-opentype");
-  src: url(fonts/Quicksand-Regular.woff2) format("woff2");
-  src: url(fonts/Quicksand-Regular.woff) format("woff");
-  src: url(fonts/Quicksand-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.ttf) format("truetype"), url(fonts/Quicksand-Regular.eot); }
+
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url(fonts/Quicksand-Regular.ttf) format("truetype"); }
+.header-mini {
+  background-image: url(img/header-mini__logo.svg);
+  padding: 24px;
+  background-repeat: no-repeat; }
+.fill_dark-100 {
+  opacity: 1; }
+
+.fill_dark-75 {
+  opacity: 0.75; }
+
+.fill_dark-50 {
+  opacity: 0.5; }
+
+.fill_dark-25 {
+  opacity: 0.25; }
+
+.fill_dark-5 {
+  opacity: 0.05; }
+
+.fill_black {
+  background-color: #1F2041; }
+
+.fill_purple {
+  background-color: #BC9CFF; }
+
+.fill_green {
+  background-color: #6FCF97; }
+
+.color-item__name, .color-item__color {
+  color: #1F2041; }
+
+.color-item__name, .color-item__color {
+  font-family: Quicksand; }
+
+.color-item__name {
+  font-weight: bold; }
+
+.color-item__name, .color-item__color {
+  font-size: 19px;
+  line-height: 24px; }
+
+.color-item__block {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px; }
+
+.color-item {
+  display: flex; }
+
+.color-item__name {
+  margin-top: 8px; }
+
+.color-item__color {
+  margin-top: 5px; }
+
+.color-item__name {
+  letter-spacing: 0.02em; }
+
+@-moz-document url-prefix() {
+  .color-item__name {
+    letter-spacing: -0.02em; } }
+.fill_dark-100 {
+  opacity: 1; }
+
+.fill_dark-75 {
+  opacity: 0.75; }
+
+.fill_dark-50 {
+  opacity: 0.5; }
+
+.fill_dark-25, .type_h1, .type_h2, .type_h3, .type_body {
+  opacity: 0.25; }
+
+.fill_dark-5 {
+  opacity: 0.05; }
+
+.fill_black {
+  background-color: #1F2041; }
+
+.fill_purple {
+  background-color: #BC9CFF; }
+
+.fill_green {
+  background-color: #6FCF97; }
+
+.desc_h1, .desc_h2 {
+  font-family: Quicksand; }
+
+.type_h1, .type_h2, .type_h3, .type_body, .desc_h3, .desc_body {
+  font-family: Montserrat; }
+
+.desc_h1, .desc_h2, .desc_h3 {
+  font-weight: bold; }
+
+.type_h1, .desc_h1 {
+  font-size: 24px;
+  line-height: 30px; }
+
+.type_h2, .desc_h2 {
+  font-size: 19px;
+  line-height: 24px; }
+
+.type_h3, .desc_h3 {
+  font-size: 12px;
+  line-height: 15px; }
+
+.type_body, .desc_body {
+  font-size: 14px;
+  line-height: 24px; }
+
+.type-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline; }
+
+.type-item__type {
+  width: 36px;
+  flex-shrink: 0;
+  text-align: right;
+  margin-right: 30px; }
+
+.type_h1 {
+  text-transform: uppercase; }
+
+.type_h2 {
+  text-transform: uppercase; }
+
+.type_h3 {
+  text-transform: uppercase; }
+
+.type_body {
+  text-transform: capitalize; }
+
+.desc_h1 {
+  letter-spacing: 0.02em; }
+
+.desc_h2 {
+  letter-spacing: 0.025em; }
+
+.desc_h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.025em; }
+
+.desc_body {
+  padding-right: 30px; }
+
+@-moz-document url-prefix() {
+  .desc_h1, .desc_h2, .desc_h3 {
+    letter-spacing: -0.02em; }
+  .desc_body {
+    letter-spacing: 0.01em; } }

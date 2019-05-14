@@ -1,3 +1,7 @@
 import './fonts/fonts.scss'
-import './variables.scss'
+// import './variables.scss'
 import './index.scss'
+import './colors-types.scss'
+import './header-mini/header-mini.scss'
+import './color-item/color-item.scss'
+import './type-item/type-item.scss'
