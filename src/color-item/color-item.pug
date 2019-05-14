@@ -1,0 +1,9 @@
+mixin color-item(dict)
+  li(class=attributes.class).color-item
+    .color-item__block(class=dict['color'])
+    .color-item__text
+      .color-item__name
+        =dict['name']
+      .color-item__color
+        =dict['color-name']
+    

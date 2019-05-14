@@ -1,0 +1,36 @@
+@import '../variables.scss';
+.color-item__block {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-item {
+  display: flex;
+}
+
+.color-item__name {
+  margin-top: 8px;
+  @extend %text_bold;
+  @extend %text_black;
+  @extend %text_Quicksand;
+  @extend %text_h2;
+}
+
+.color-item__color {
+  margin-top: 5px;
+  @extend %text_black;
+  @extend %text_Quicksand;
+  @extend %text_h2;
+}
+
+.color-item__name {
+  letter-spacing: 0.02em;
+}
+
+@-moz-document url-prefix() {
+  .color-item__name {
+      letter-spacing: -0.02em;
+  }
+}
