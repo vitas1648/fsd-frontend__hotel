@@ -1,6 +1,6 @@
 {
     "name": "fsd-frontend_hotel",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Web site for booking hotel rooms.",
     "main": "index.js",
     "scripts": {
