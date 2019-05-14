@@ -1,21 +1,15 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Regular.eot');
-    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype');
-    src: url('Montserrat-Regular.woff2') format('woff2');
-    src: url('Montserrat-Regular.woff') format('woff');
-    src: url('Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src:    url('Montserrat-Regular.woff2') format('woff2'), 
+            url('Montserrat-Regular.woff') format('woff'),
+            url('Montserrat-Regular.ttf') format('truetype'),
+            url('Montserrat-Regular.eot');
 }
 
 @font-face {
     font-family: 'Quicksand';
-    src: url('Quicksand-Regular.eot');
-    src: url('Quicksand-Regular.eot?#iefix') format('embedded-opentype');
-    src: url('Quicksand-Regular.woff2') format('woff2');
-    src: url('Quicksand-Regular.woff') format('woff');
-    src: url('Quicksand-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src:    url('Quicksand-Regular.woff2') format('woff2'),
+            url('Quicksand-Regular.woff') format('woff'),
+            url('Quicksand-Regular.ttf') format('truetype'),
+            url('Quicksand-Regular.eot');
 }
