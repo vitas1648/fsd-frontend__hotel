@@ -1,0 +1,18 @@
+mixin type-item(dict)
+  li(class=attributes.class).type-item
+    if dict['type'] == 'h1'
+      - var type_class = 'type_h1'
+      - var desc_class = 'desc_h1'
+    else if dict['type'] == 'h2'
+      - var type_class = 'type_h2'
+      - var desc_class = 'desc_h2'
+    else if dict['type'] == 'h3'
+      - var type_class = 'type_h3'
+      - var desc_class = 'desc_h3'
+    else if dict['type'] == 'body'
+      - var type_class = 'type_body'
+      - var desc_class = 'desc_body'
+    .type-item__type(class=type_class)
+      =dict['type']
+    .type-item__description(class=desc_class)
+      =dict['description']

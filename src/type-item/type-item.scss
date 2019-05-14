@@ -1,0 +1,81 @@
+@import '../variables.scss';
+
+.type-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  // align-items: flex-end;
+}
+
+.type-item__type {
+  width: 36px;
+  flex-shrink: 0;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.type_h1 {
+  @extend %text_Montserrat;
+  @extend %text_h1;
+  text-transform: uppercase;
+  @extend %dark-25;
+}
+
+.type_h2 {
+  @extend %text_Montserrat;
+  @extend %text_h2;
+  text-transform: uppercase;
+  @extend %dark-25;
+}
+
+.type_h3 {
+  @extend %text_Montserrat;
+  @extend %text_h3;
+  text-transform: uppercase;
+  @extend %dark-25;
+}
+
+.type_body {
+  @extend %text_Montserrat;
+  @extend %text_body;
+  text-transform: capitalize;
+  @extend %dark-25;
+}
+
+.desc_h1 {
+  @extend %text_Quicksand;
+  @extend %text_h1;
+  @extend %text_bold;
+  letter-spacing: 0.02em;
+}
+
+.desc_h2 {
+  @extend %text_Quicksand;
+  @extend %text_h2;
+  @extend %text_bold;
+  letter-spacing: 0.025em;
+}
+
+.desc_h3 {
+  @extend %text_Montserrat;
+  text-transform: uppercase;
+  @extend %text_h3;
+  @extend %text_bold;
+  letter-spacing: 0.025em;
+}
+
+.desc_body {
+  @extend %text_Montserrat;
+  @extend %text_body;
+  padding-right: 30px;
+}
+
+@-moz-document url-prefix() {
+  .desc_h1, .desc_h2, .desc_h3 {
+      letter-spacing: -0.02em;
+  }
+  .desc_body {
+      letter-spacing: 0.01em;
+  }
+}
+
