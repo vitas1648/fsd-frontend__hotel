@@ -68,6 +68,7 @@
   @extend %text_Montserrat;
   @extend %text_body;
   padding-right: 30px;
+  @extend %dark-75;
 }
 
 @-moz-document url-prefix() {

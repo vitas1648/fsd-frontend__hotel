@@ -2,10 +2,6 @@ body {
   width: 1380px;
   padding: 30px;
   margin: 0; }
-body {
-  width: 1380px;
-  padding: 30px;
-  margin: 0; }
 
 .main {
   margin: 67px 161px 115px 120px;
@@ -31,6 +27,10 @@ body {
 
 .types__item:not(:last-child) {
   margin-bottom: 49px; }
+body {
+  width: 1380px;
+  padding: 30px;
+  margin: 0; }
 @font-face {
   font-family: 'Montserrat';
   src: url(fonts/Montserrat-Regular.woff2) format("woff2"), url(fonts/Montserrat-Regular.woff) format("woff"), url(fonts/Montserrat-Regular.ttf) format("truetype"), url(fonts/Montserrat-Regular.eot); }
@@ -38,14 +38,65 @@ body {
 @font-face {
   font-family: 'Quicksand';
   src: url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.ttf) format("truetype"), url(fonts/Quicksand-Regular.eot); }
+.fill_dark-100 {
+  opacity: 1; }
 
-@font-face {
-  font-family: 'Quicksand-Bold';
-  src: url(fonts/Quicksand-Regular.ttf) format("truetype"); }
+.fill_dark-75, .header-mini__link {
+  opacity: 0.75; }
+
+.fill_dark-50 {
+  opacity: 0.5; }
+
+.fill_dark-25 {
+  opacity: 0.25; }
+
+.fill_dark-5 {
+  opacity: 0.05; }
+
+.fill_black {
+  background-color: #1F2041; }
+
+.fill_purple {
+  background-color: #BC9CFF; }
+
+.fill_green {
+  background-color: #6FCF97; }
+
+.h3, .header-mini__link {
+  color: #1F2041; }
+
+.h3, .header-mini__link {
+  font-family: Montserrat; }
+
+.h3 {
+  font-weight: bold; }
+
+.h3, .header-mini__link {
+  font-size: 12px;
+  line-height: 15px; }
+
+.h3 {
+  text-transform: uppercase;
+  margin: 0; }
+
 .header-mini {
   background-image: url(img/header-mini__logo.svg);
-  padding: 24px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 48px; }
+
+.header-mini__nav {
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+  display: none; }
+
+.header-mini__link {
+  text-decoration: none; }
+
+.header-mini:hover .header-mini__nav {
+  display: flex; }
 .fill_dark-100 {
   opacity: 1; }
 
@@ -70,18 +121,29 @@ body {
 .fill_green {
   background-color: #6FCF97; }
 
-.color-item__name, .color-item__color {
+.h3, .color-item__name, .color-item__color {
   color: #1F2041; }
 
 .color-item__name, .color-item__color {
   font-family: Quicksand; }
 
-.color-item__name {
+.h3 {
+  font-family: Montserrat; }
+
+.h3, .color-item__name {
   font-weight: bold; }
 
 .color-item__name, .color-item__color {
   font-size: 19px;
   line-height: 24px; }
+
+.h3 {
+  font-size: 12px;
+  line-height: 15px; }
+
+.h3 {
+  text-transform: uppercase;
+  margin: 0; }
 
 .color-item__block {
   width: 70px;
@@ -107,7 +169,7 @@ body {
 .fill_dark-100 {
   opacity: 1; }
 
-.fill_dark-75 {
+.fill_dark-75, .desc_body {
   opacity: 0.75; }
 
 .fill_dark-50 {
@@ -128,13 +190,16 @@ body {
 .fill_green {
   background-color: #6FCF97; }
 
+.h3 {
+  color: #1F2041; }
+
 .desc_h1, .desc_h2 {
   font-family: Quicksand; }
 
-.type_h1, .type_h2, .type_h3, .type_body, .desc_h3, .desc_body {
+.h3, .type_h1, .type_h2, .type_h3, .type_body, .desc_h3, .desc_body {
   font-family: Montserrat; }
 
-.desc_h1, .desc_h2, .desc_h3 {
+.h3, .desc_h1, .desc_h2, .desc_h3 {
   font-weight: bold; }
 
 .type_h1, .desc_h1 {
@@ -145,13 +210,17 @@ body {
   font-size: 19px;
   line-height: 24px; }
 
-.type_h3, .desc_h3 {
+.h3, .type_h3, .desc_h3 {
   font-size: 12px;
   line-height: 15px; }
 
 .type_body, .desc_body {
   font-size: 14px;
   line-height: 24px; }
+
+.h3 {
+  text-transform: uppercase;
+  margin: 0; }
 
 .type-item {
   display: flex;

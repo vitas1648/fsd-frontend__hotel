@@ -1,11 +1,12 @@
 include color-item/color-item
 include type-item/type-item
+include header-mini/header-mini
 
 doctype html
 html(lang="ru")
   head
   body
-    .header-mini
+    +header-mini
     .main
       ul.colors
         +color-item({

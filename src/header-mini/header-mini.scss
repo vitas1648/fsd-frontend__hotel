@@ -1,6 +1,28 @@
+@import "../variables.scss";
+
 .header-mini {
-    background-image: url('header-mini__logo.svg');
-    padding: 24px;
-    // margin: 30px;
-    background-repeat: no-repeat;
+  background-image: url('header-mini__logo.svg');
+  // padding: 24px;
+  // margin: 30px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+}
+
+.header-mini__nav {
+  list-style: none;
+  // display: flex;
+  justify-content: space-around;
+  width: 50%;
+  display: none;
+}
+
+.header-mini__link {
+  text-decoration: none;
+  @extend %body;
+}
+
+.header-mini:hover .header-mini__nav {
+  display: flex;
 }
