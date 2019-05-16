@@ -2,89 +2,125 @@ $black: #1F2041;
 $purple: #BC9CFF;
 $green: #6FCF97;
 %dark-100 {
-    opacity: 1;
+  opacity: 1;
 }
 
 %dark-75 {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
 %dark-50 {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 %dark-25 {
-    opacity: 0.25;
+  opacity: 0.25;
 }
 
 %dark-5 {
-    opacity: 0.05;
+  opacity: 0.05;
 }
 
 .fill_black {
-    background-color: $black;
+  background-color: $black;
 }
 
 .fill_purple {
-    background-color: $purple;
+  background-color: $purple;
 }
 
 .fill_green {
-    background-color: $green;
+  background-color: $green;
 }
 
 %text_black {
-    color: $black;
+  color: $black;
 }
 
 .fill_dark-100 {
-    @extend %dark-100;
+  @extend %dark-100;
 }
 
 .fill_dark-75 {
-    @extend %dark-75;
+  @extend %dark-75;
 }
 
 .fill_dark-50 {
-    @extend %dark-50;
+  @extend %dark-50;
 }
 
 .fill_dark-25 {
-    @extend %dark-25;
+  @extend %dark-25;
 }
 
 .fill_dark-5 {
-    @extend %dark-5;
+  @extend %dark-5;
 }
 
 %text_Quicksand {
-    font-family: Quicksand;
+  font-family: Quicksand;
 }
 
 %text_Montserrat {
-    font-family: Montserrat;
+  font-family: Montserrat;
 }
 
 %text_bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 %text_h1 {
-    font-size: 24px;
-    line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 %text_h2 {
-    font-size: 19px;
-    line-height: 24px;
+  font-size: 19px;
+  line-height: 24px;
 }
 
 %text_h3 {
-    font-size: 12px;
-    line-height: 15px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 %text_body {
-    font-size: 14px;
-    line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+%h1 {
+  @extend %text_h1;
+  @extend %text_Quicksand;
+  @extend %text_bold;
+  @extend %text_black;
+}
+
+%h2 {
+  @extend %text_h2;
+  @extend %text_Quicksand;
+  @extend %text_bold;
+  @extend %text_black;
+}
+
+%h3 {
+  @extend %text_h3;
+  @extend %text_Montserrat;
+  @extend %text_black;
+  @extend %text_bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h3 {
+  @extend %h3;
+}
+
+
+
+%body {
+  @extend %text_h3;
+  @extend %text_Montserrat;
+  @extend %text_black;
+  @extend %dark-75;
 }
