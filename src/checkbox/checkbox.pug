@@ -1,0 +1,8 @@
+mixin checkbox(dict)
+  .checkbox
+    - var id = "checkbox-" + dict['name'] 
+    input(type="checkbox" id=id).checkbox__input
+    //- span.checkbox__custom
+    if 'label' in dict
+      label(for=id).checkbox__label
+        =dict['label']

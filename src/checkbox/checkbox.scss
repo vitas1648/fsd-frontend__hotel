@@ -1,0 +1,47 @@
+@import "../variables.scss";
+
+.checkbox {
+  width: 222px;
+  height: 20px;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__label {
+  position: relative;
+  margin-left: 25px;
+  @extend %body;
+  vertical-align: middle;
+  display: block;
+}
+
+.checkbox__label::before {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  content: '';
+  left: -25px;
+  top: -3px;
+}
+
+input:checked ~ label::before {
+  border-color: $purple;
+}
+
+input:checked ~ ::after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 6px;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
+  transform: rotate(45deg);
+  top: 1.5px;
+  left: -18px;
+}
