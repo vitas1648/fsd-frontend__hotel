@@ -1,0 +1,18 @@
+mixin input(dict)
+  .input-block
+    if 'type' in dict
+      - var type = dict['type']
+    else
+      - var type = 'text'
+    if 'placeholder' in dict
+      - placeholder = dict['placeholder']
+    else
+      - var placeholder = type.charAt(0).toUpperCase() + type.slice(1)
+    if 'name' in dict
+      .input-header
+        h3.h3.input__name
+          =dict['name']
+        if 'status' in dict
+          .input__status
+            =dict['status']
+    input(type=type placeholder=placeholder).input
